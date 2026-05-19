@@ -1,0 +1,50 @@
+---
+title: "Créer un mot de passe vraiment sécurisé en 2026"
+description: "Ce qui rend un mot de passe solide, les erreurs les plus courantes à éviter, et comment générer puis gérer des mots de passe forts sans se compliquer la vie."
+date: "2026-05-14"
+author: "Aymen"
+---
+
+Le mot de passe reste la première barrière de protection de tes comptes en ligne. Pourtant, la majorité des piratages exploitent des mots de passe faibles, devinés ou réutilisés. Voici comment construire des mots de passe réellement solides, sans y passer des heures.
+
+## Ce qui rend un mot de passe fort
+
+La force d'un mot de passe se mesure à son **entropie** : le nombre de combinaisons qu'un attaquant devrait tester pour le deviner. Deux facteurs comptent vraiment :
+
+- **La longueur.** Chaque caractère supplémentaire multiplie le nombre de possibilités. C'est le levier le plus efficace.
+- **La variété.** Mélanger majuscules, minuscules, chiffres et symboles agrandit l'alphabet utilisé, donc le nombre de combinaisons.
+
+Un mot de passe de 16 caractères mélangeant les quatre types est aujourd'hui considéré comme très difficile à casser, même avec du matériel puissant.
+
+## Les erreurs les plus courantes
+
+Beaucoup de mots de passe semblent compliqués mais sont en réalité prévisibles :
+
+1. **Les substitutions évidentes** : remplacer « a » par « @ » ou « e » par « 3 » ne trompe plus aucun logiciel d'attaque.
+2. **Les informations personnelles** : prénom, date de naissance, nom d'animal — tout ce qui figure sur tes réseaux sociaux est testé en priorité.
+3. **Les suites du clavier** : « azerty », « 123456 » et leurs variantes sont en tête des listes d'attaque.
+4. **La réutilisation.** C'est l'erreur la plus dangereuse : si un seul site est piraté, tous tes comptes partageant ce mot de passe tombent.
+
+## Pourquoi générer aléatoirement
+
+Le cerveau humain est incapable de produire du vrai hasard : on retombe toujours sur des schémas. Un générateur, lui, utilise une source aléatoire cryptographique pour produire des chaînes sans aucune logique exploitable.
+
+Le [générateur de mot de passe de Toolify](/tools/password-generator) s'appuie sur la fonction `crypto.getRandomValues` de ton navigateur — le même mécanisme que celui utilisé pour la sécurité des connexions chiffrées. Tu choisis la longueur et les types de caractères, et tu obtiens un mot de passe robuste, généré localement, qui n'est jamais transmis nulle part.
+
+## Comment retenir des mots de passe aléatoires
+
+La réponse est simple : **tu ne dois pas les retenir.** Un mot de passe aléatoire est par nature impossible à mémoriser, et c'est justement ce qui le rend sûr. La solution est un gestionnaire de mots de passe :
+
+- Tu génères un mot de passe unique pour chaque site.
+- Le gestionnaire les stocke de façon chiffrée.
+- Tu ne mémorises qu'un seul mot de passe maître, lui aussi long et solide.
+
+Ainsi, chaque compte est isolé : la fuite d'un site n'expose jamais les autres.
+
+## Activer la double authentification
+
+Même le meilleur mot de passe gagne à être complété par la **double authentification** (2FA). Un code temporaire envoyé sur ton téléphone ou généré par une application ajoute une seconde barrière : connaître le mot de passe ne suffit plus à entrer.
+
+## En résumé
+
+Un bon mot de passe est long, aléatoire, unique pour chaque compte, et stocké dans un gestionnaire. Génère-le plutôt que de l'inventer, active la double authentification sur les comptes sensibles, et tu auras déjà neutralisé l'immense majorité des attaques courantes.
